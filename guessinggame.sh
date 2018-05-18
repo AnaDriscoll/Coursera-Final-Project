@@ -3,7 +3,7 @@
 function guessinggame {
 num=$(ls -1 | wc -l)
 guess=0
-while [[ $guess -ne 3 ]]
+while [[ $guess -ne $num ]]
 do
 	echo "How many files are in the directory?"
 	read response
